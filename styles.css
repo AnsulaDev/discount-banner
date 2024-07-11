@@ -1,0 +1,53 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.banner-container {
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px; 
+  margin: 20px; 
+}
+
+.banner-container .offer-countdown {
+  display: flex;
+  align-items: center;
+}
+
+.banner-container .offer-countdown .icon-color {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgb(236, 20, 20); 
+}
+
+.countDown, .discount-code {
+  display: flex;
+  align-items: center;
+}
+
+.discount-code {
+
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .banner-container {
+      flex-direction: column;
+  }
+  .discount-code {
+      margin-top: 10px;
+      background-color: #e9c00d;
+  }
+
+}
